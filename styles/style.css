@@ -4,9 +4,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #481B68;
-  background-color: #481B68;
-  color: #FFFFFF;
+  border: 2px solid #481b68;
+  background-color: #481b68;
+  color: #ffffff;
   font-family: "Open Sans";
   font-weight: 400;
   padding: 12px 30px;
@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 .btn-purple:hover {
-  box-shadow: 1px 1px 7px #39363D;
+  box-shadow: 1px 1px 7px #39363d;
 }
 
 .btn-purple-border {
@@ -25,9 +25,9 @@
   justify-content: center;
   margin-left: 20px;
   border-radius: 30px;
-  border: 2px solid #481B68;
+  border: 2px solid #481b68;
   background-color: transparent;
-  color: #481B68;
+  color: #481b68;
   font-family: "Open Sans";
   font-weight: 600;
   padding: 12px 30px;
@@ -36,7 +36,7 @@
   transition: box-shadow 0.3s ease;
 }
 .btn-purple-border:hover {
-  box-shadow: 1px 1px 7px #39363D;
+  box-shadow: 1px 1px 7px #39363d;
 }
 
 .btn-purple-border::before {
@@ -44,7 +44,7 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  color: #481B68;
+  color: #481b68;
   background-image: url(/src/icon_phone.svg);
   background-size: cover;
   flex: 1 0 auto;
@@ -52,74 +52,72 @@
   margin-right: 10px;
 }
 
-.btn-bordo {
+.btn-light-purple-border {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #e1dad3;
-  background-color: #39313c;
-  color: #e1dad3;
+  border: 2px solid #ffffff;
+  background-color: #6a5975;
+  color: #ffffff;
   font-family: "Open Sans";
   font-weight: 400;
   padding: 12px 30px;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
-.btn-bordo:hover {
-  box-shadow: 1px 1px 7px #39363D;
+.btn-light-purple-border:hover {
+  box-shadow: 1px 1px 7px #39363d;
+  color: #39313c;
+  border-color: #39313c;
 }
 
-body {
-  /* background-image: url(src/Group\ 14.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-  line-height: 1;
+.content-container {
+  background-image: url(/src/background-noise.png);
+  height: 100vh;
 }
 
-.main-screen {
-  background-color: #E2DBD4;
-  padding-left: 200px;
-  padding-right: 200px;
-}
-
-.main-cap {
-  padding: 20px 100px 0px 0px;
+.header-container {
+  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  background-color: #6a5975;
+  padding: 15px 0;
 }
 
-.logo-span {
-  color: #2C1039;
-  font-size: 30px;
+.txt-logo {
+  color: #ffffff;
+  font-size: 20px;
 }
 
-.ul-sections {
-  list-style-type: none;
+.ul-header {
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
 }
 
-.ul-sections > li {
+.ul-header > li {
   font-family: "Open Sans";
   margin-left: 30px;
   font-size: 14px;
-  color: #481B68;
-  font-weight: 500;
+  color: #ffffff;
+  font-weight: 400;
   display: flex;
   cursor: pointer;
   align-items: center;
 }
+.ul-header > li:hover {
+  color: #39313c;
+}
 
-.ul-sections > li:first-child:before {
+.ul-header > li:first-child:before {
   content: "";
   display: inline-block;
   width: 15px;
   height: 15px;
-  color: #481B68;
   background-image: url(/src/treetochki.svg);
   background-size: cover;
   flex: 1 0 auto;
@@ -127,50 +125,21 @@ body {
   margin-right: 10px;
 }
 
-.div-phone {
+.phone-conainer {
+  margin-left: 30px;
   margin-left: 30;
   display: flex;
   align-items: center;
-}
-
-.div-phone > span {
-  font-size: 15px;
-  color: #481B68;
-  font-weight: 600;
   font-family: "Open Sans";
-  white-space: nowrap;
-}
-
-.button-phone {
-  margin-left: 20px;
-  border-radius: 30px;
-  background-color: #E2DBD4;
-  border: 2px solid #481B68;
-  padding: 15px;
-  font-size: 13px;
-  color: #481B68;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.button-phone::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  color: #481B68;
-  background-image: url(/src/icon_phone.svg);
-  background-size: cover;
-  flex: 1 0 auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  color: #ffffff;
+  font-weight: 400;
 }
 
 .content-main {
   margin-top: 30px;
   flex: 1;
   display: flex;
+  height: auto;
   justify-content: space-evenly;
 }
 
@@ -209,12 +178,20 @@ body {
   margin-bottom: 30px;
 }
 
+.img-main-middle-div {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
 .image-main-middle {
   justify-content: end;
   padding-left: 40px;
   flex: 0 1 auto;
-  width: 700px;
-  height: 700px;
+  display: flex;
+  width: 70vh;
+  height: 70vh;
+  align-content: end;
 }
 
 .image-main-end {

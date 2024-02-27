@@ -5,15 +5,13 @@ $font_title: "Playfair Display";
 $font_secondary: "Open Sans";
 
 $c_black: #000000;
-$c_white: #FFFFFF;
+$c_white: #ffffff;
 $c_background: #e1dad3;
 $c_beige: #cfc3c6;
 $c_light-purple: #6a5975;
 $c_bordo: #39313c;
-$c_purple: #481B68;
-$grey: #39363D;
-
-
+$c_purple: #481b68;
+$grey: #39363d;
 
 .btn-purple {
   display: inline-flex;
@@ -29,9 +27,9 @@ $grey: #39363D;
   font-size: 20px;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
-    &:hover{
-        box-shadow: 1px 1px 7px $grey;
-    }
+  &:hover {
+    box-shadow: 1px 1px 7px $grey;
+  }
 }
 
 .btn-purple-border {
@@ -49,17 +47,17 @@ $grey: #39363D;
   font-size: 13px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-    &:hover{
-        box-shadow: 1px 1px 7px $grey;
-    }
+  &:hover {
+    box-shadow: 1px 1px 7px $grey;
+  }
 }
 
-.btn-purple-border::before{
+.btn-purple-border::before {
   content: "";
   display: inline-block;
   width: 15px;
   height: 15px;
-  color: #481B68;
+  color: #481b68;
   background-image: url(/src/icon_phone.svg);
   background-size: cover;
   flex: 1 0 auto;
@@ -67,74 +65,77 @@ $grey: #39363D;
   margin-right: 10px;
 }
 
-.btn-bordo {
+.btn-light-purple-border {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid $c_background;
-  background-color: $c_bordo;
-  color: $c_background;
+  border: 2px solid $c_white;
+  background-color: $c_light-purple;
+  color: $c_white;
   font-family: $font_secondary;
   font-weight: 400;
   padding: 12px 30px;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 14px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-    &:hover{
-        box-shadow: 1px 1px 7px $grey;
-    }
-
+  &:hover {
+    box-shadow: 1px 1px 7px $grey;
+    color: $c_bordo;
+    border-color: $c_bordo;
+  }
 }
 
-body{
-  /* background-image: url(src/Group\ 14.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
-  line-height: 1;
-}
-.main-screen{
-  background-color: #E2DBD4;
-  padding-left: 200px;
-  padding-right: 200px;   
+body {
 }
 
-.main-cap{
-  padding: 20px 100px 0px 0px;
+.content-container {
+  background-image: url(/src/background-noise.png);
+  height: 100vh;
+  //   padding-left: 200px;
+  //   padding-right: 200px; h
+}
+
+.header-container {
+  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $c_light-purple;
+  padding: 15px 0;
 }
 
-.logo-span{
-  color: #2C1039;
-  font-size: 30px;
+.txt-logo {
+  color: $c_white;
+  font-size: 20px;
 }
 
-.ul-sections{
-  list-style-type: none;
+.ul-header {
+  margin-left: 20px;
   display: flex;
   flex-direction: row;
 }
 
-.ul-sections>li{
+.ul-header > li {
   font-family: $font_secondary;
   margin-left: 30px;
   font-size: 14px;
-  color: $c_purple;
-  font-weight: 500;
+  color: $c_white;
+  font-weight: 400;
   display: flex;
   cursor: pointer;
   align-items: center;
+  &:hover {
+    color: $c_bordo;
+  }
 }
 
-.ul-sections>li:first-child:before{
+.ul-header > li:first-child:before {
   content: "";
   display: inline-block;
   width: 15px;
   height: 15px;
-  color: #481B68;
   background-image: url(/src/treetochki.svg);
   background-size: cover;
   flex: 1 0 auto;
@@ -142,50 +143,21 @@ body{
   margin-right: 10px;
 }
 
-.div-phone{
+.phone-conainer {
+  margin-left: 30px;
   margin-left: 30;
   display: flex;
   align-items: center;
-}
-
-.div-phone>span{
-  font-size: 15px;
-  color: $c_purple;
-  font-weight: 600;
   font-family: $font_secondary;
-  white-space: nowrap;
-}
-
-.button-phone{
-  margin-left: 20px;
-  border-radius: 30px;
-  background-color:#E2DBD4;
-  border: 2px solid #481B68;
-  padding: 15px;
-  font-size: 13px;
-  color: #481B68;
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.button-phone::before{
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  color: #481B68;
-  background-image: url(/src/icon_phone.svg);
-  background-size: cover;
-  flex: 1 0 auto;
-  margin-left: 10px;
-  margin-right: 10px;
+  color: $c_white;
+  font-weight: 400;
 }
 
 .content-main{
   margin-top: 30px;
   flex: 1;
   display: flex;
+  height: auto;
   justify-content: space-evenly;
 }
 
@@ -224,12 +196,20 @@ body{
   margin-bottom: 30px;
 }
 
+.img-main-middle-div{
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
 .image-main-middle{
   justify-content: end;
   padding-left: 40px;
   flex: 0 1 auto;
-  width: 700px;
-  height: 700px;
+  display: flex;
+  width: 70vh;
+  height: 70vh;
+  align-content: end;
 }
 
 .image-main-end{
@@ -246,4 +226,162 @@ body{
   background-color:#2C1039;
 }
 
+// body{
+//   /* background-image: url(src/Group\ 14.png);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed; */
+//   line-height: 1;
+// }
 
+// .main-screen{
+//   background-image: url(/src/background-noise.png);
+//   padding-left: 200px;
+//   padding-right: 200px;
+// }
+
+// .main-cap{
+//   padding: 20px 100px 0px 0px;
+//   display: flex;
+//   justify-content: space-evenly;
+//   align-items: center
+// }
+
+// .logo-span{
+//   color: #2C1039;
+//   font-size: 30px;
+// }
+
+// .ul-sections{
+//   list-style-type: none;
+//   display: flex;
+//   flex-direction: row;
+// }
+
+// .ul-sections>li{
+//   font-family: $font_secondary;
+//   margin-left: 30px;
+//   font-size: 14px;
+//   color: $c_purple;
+//   font-weight: 500;
+//   display: flex;
+//   cursor: pointer;
+//   align-items: center;
+// }
+
+// .ul-sections>li:first-child:before{
+//   content: "";
+//   display: inline-block;
+//   width: 15px;
+//   height: 15px;
+//   color: #481B68;
+//   background-image: url(/src/treetochki.svg);
+//   background-size: cover;
+//   flex: 1 0 auto;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+
+// .div-phone{
+//   margin-left: 30;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .div-phone>span{
+//   font-size: 15px;
+//   color: $c_purple;
+//   font-weight: 600;
+//   font-family: $font_secondary;
+//   white-space: nowrap;
+// }
+
+// .button-phone{
+//   margin-left: 20px;
+//   border-radius: 30px;
+//   background-color:#E2DBD4;
+//   border: 2px solid #481B68;
+//   padding: 15px;
+//   font-size: 13px;
+//   color: #481B68;
+//   margin-right: 10px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .button-phone::before{
+//   content: "";
+//   display: inline-block;
+//   width: 15px;
+//   height: 15px;
+//   color: #481B68;
+//   background-image: url(/src/icon_phone.svg);
+//   background-size: cover;
+//   flex: 1 0 auto;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+
+// .content-main{
+//   margin-top: 30px;
+//   flex: 1;
+//   display: flex;
+//   justify-content: space-evenly;
+// }
+
+// .info{
+//   margin-top: 100px;
+//   display: flex;
+//   flex-direction: column;
+//   width: 400px;
+// }
+
+// .info>h1{
+//   font-size: 40px;
+//   color: #481B68;
+// }
+
+// .info>h2{
+//   margin-top: 40px;
+//   font-size: 16px;
+//   color: #481B68;
+// }
+
+// .info>button{
+//   margin-top: 40px;
+//   width: 250px;
+//   align-content: start;
+//   border-radius: 30px;
+//   background-color:#481B68;
+//   color: white;
+//   padding: 20px;
+//   font-size: 13px;
+// }
+
+// .info>h3{
+//   font-size: 15px;
+//   margin-top: auto;
+//   margin-bottom: 30px;
+// }
+
+// .image-main-middle{
+//   justify-content: end;
+//   padding-left: 40px;
+//   flex: 0 1 auto;
+//   width: 700px;
+//   height: 700px;
+// }
+
+// .image-main-end{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding-right: 20px;
+//   height: 600px;
+//   object-fit: cover;
+// }
+
+// .section1-div{
+//   height: 1200px;
+//   background-color:#2C1039;
+// }
