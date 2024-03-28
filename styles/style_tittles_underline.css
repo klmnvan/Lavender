@@ -1,0 +1,10 @@
+:root {
+  --underline-intrinsic-width: 8;
+  --underline-width: 12;
+  --underline-color: #C6B9C0;
+  --underline-cap-width: 4px;
+  --underline-offset-y: -3px;
+  --underline-padding-x: 0.12em;
+  --cap-image-left: url(https://files-d4s40otz1.now.sh/left.svg);
+  --cap-image-right: url(https://files-4vvqilj8v.now.sh/right.svg);
+}/*# sourceMappingURL=style_tittles_underline.css.map */
