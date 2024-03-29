@@ -258,7 +258,8 @@
   width: auto;
   flex: 0.7;
   display: flex;
-  margin: 5%;
+  margin: 0 5%;
+  margin-top: 10vh;
   flex-direction: column;
   background-color: #e1dad3;
 }
@@ -269,6 +270,7 @@
   display: flex;
   flex-direction: column;
   background-color: #cfc3c6;
+  padding-top: 10vh;
 }
 
 .div-back-order {
@@ -301,9 +303,15 @@
   border: none;
   border-bottom: 1px solid #39313c;
   background-color: transparent;
-  color: inherit;
+  color: #481b68;
   margin-top: 20px;
   outline: none;
+}
+.some-input::-moz-placeholder {
+  color: #000000;
+}
+.some-input::placeholder {
+  color: #000000;
 }
 
 .some-input[type=text] {

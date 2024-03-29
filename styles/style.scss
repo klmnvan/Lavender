@@ -285,7 +285,8 @@ body {
   width: auto;
   flex: 0.7;
   display: flex;
-  margin: 5%;
+  margin: 0 5%;
+  margin-top: 0.1 * 100vh;
   flex-direction: column;
   background-color: #e1dad3;
 }
@@ -296,6 +297,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #cfc3c6;
+  padding-top : 0.1 * 100vh;
 } 
 .div-back-order {
   display: flex;
@@ -327,9 +329,12 @@ body {
   border: none;
   border-bottom: 1px solid $c_bordo;
   background-color: transparent;
-  color: inherit;
+  color: $c_purple;
   margin-top: 20px;
   outline: none;
+  &::placeholder{
+    color: $c_light;
+  }
 }
 
 .some-input[type=text] {
