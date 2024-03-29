@@ -303,24 +303,24 @@
   border: none;
   border-bottom: 1px solid #39313c;
   background-color: transparent;
-  color: #481b68;
+  color: #000000;
   margin-top: 20px;
   outline: none;
 }
 .some-input::-moz-placeholder {
-  color: #000000;
+  color: rgba(112, 106, 89, 0.4588235294);
 }
 .some-input::placeholder {
-  color: #000000;
+  color: rgba(112, 106, 89, 0.4588235294);
 }
 
 .some-input[type=text] {
   height: 17px;
   border: 0;
   margin-left: 1px;
+  font-size: x-large;
   font-family: "Open Sans";
-  font-size: medium;
-  padding-bottom: 2px;
+  padding: 10px;
   box-shadow: -8px 10px 0px -7px #6a5975, 8px 10px 0px -7px #6a5975;
   transition: box-shadow 0.3s;
 }
@@ -328,4 +328,10 @@
 .some-input[type=text]:focus {
   outline: none;
   box-shadow: -8px 10px 0px -7px #39363d, 8px 10px 0px -7px #39363d;
+}
+
+.text-in-order{
+  font-family: "Open Sans";
+  font-size: 24px;
+  color: #6a5975;
 }/*# sourceMappingURL=style.css.map */

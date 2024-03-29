@@ -1,116 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/null.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Оформление заказа</title>
 
     <style>
-        .inpt1{
-            flex: calc(2.5/10);
-            margin-right: 10px;
-        }
-        .inpt2{
-            flex: calc(4.5/10);
-            margin-right: 10px;
-        }
-        .inpt3{
-            flex: calc(1/10);
-            margin-right: 10px;
-        }
-        .inpt4{
-            flex: calc(1/10);
-            margin-right: 10px;
-        }
-        .inpt5{
-            flex: calc(1/10);
-        }
-        .inpt6{
-            flex: calc(4/10);
-            margin-right: 10px;
-        }
-        .inpt7{
-            flex: calc(4/10);
-            margin-right: 10px;
-        }
-        .inpt8{
-            flex: calc(3/10);
-        }
-        .secondHorContainer{
-            display: flex;
-            flex-direction: row;
-        }
+      .inpt1 {
+        flex: calc(2.5 / 10);
+        margin-right: 10px;
+      }
+      .inpt2 {
+        flex: calc(4.5 / 10);
+        margin-right: 10px;
+      }
+      .inpt3 {
+        flex: calc(1 / 10);
+        margin-right: 10px;
+      }
+      .inpt4 {
+        flex: calc(1 / 10);
+        margin-right: 10px;
+      }
+      .inpt5 {
+        flex: calc(1 / 10);
+      }
+      .inpt6 {
+        flex: calc(4 / 10);
+        margin-right: 10px;
+      }
+      .inpt7 {
+        flex: calc(4 / 10);
+        margin-right: 10px;
+      }
+      .inpt8 {
+        flex: calc(3 / 10);
+      }
+      .secondHorContainer {
+        display: flex;
+        flex-direction: row;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="content-order">
-  
-        <div class="order-container-left">
-  
-            <div class="div-back-order">
-                <h2><a href="index.html">Вернуться к оформлению заказа</a></h2>
-            </div>
+      <div class="order-container-left">
+        <div style="align-items: end" class="div-back-order">
+          <svg
+            width="27"
+            height="6"
+            viewBox="0 0 27 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.5 5H1C1 3.5 2.55063 2 6.68546 1"
+              stroke="#481B68"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
 
-            <span style="margin-top: 10px;">
-              <h1 class="heading-order">Ваши данные</h1>
-            </span>
+          <h2 style="margin-left: 10px;">
+            <a href="index.html" style="font-size: 24px"
+              >Вернуться к оформлению заказа</a
+            >
+          </h2>
+        </div>
 
-            <span style="display: flex; margin-top: 5%;">
+        <span style="margin-top: 20px">
+          <h1 class="heading-order">Ваши данные</h1>
+        </span>
 
-                <input class="inpt1 some-input" type="text" placeholder="Ваш город" >
-                <input class="inpt2 some-input" type="text" placeholder="Улица доставки">
-                <input class="inpt3 some-input" type="text" placeholder="Дом">
-                <input class="inpt4 some-input" type="text" placeholder="Корпус">
-                <input class="inpt5 some-input" type="text" placeholder="Квартира">
+        <span style="display: flex; margin-top: 5%">
+          <input class="inpt1 some-input" type="text" placeholder="Ваш город" />
+          <input
+            class="inpt2 some-input"
+            type="text"
+            placeholder="Улица доставки"
+          />
+          <input class="inpt3 some-input" type="text" placeholder="Дом" />
+          <input class="inpt4 some-input" type="text" placeholder="Корпус" />
+          <input class="inpt5 some-input" type="text" placeholder="Квартира" />
+        </span>
 
-            </span>
+        <span style="display: flex; margin-top: 5%">
+          <input class="inpt6 some-input" type="text" placeholder="Ваше имя" />
+          <input class="inpt7 some-input" type="text" placeholder="Телефон" />
+          <input
+            class="inpt8 some-input"
+            type="text"
+            placeholder="Способ оплаты"
+          />
+        </span>
 
-            <span style="display: flex; margin-top: 5%;">
+        <h2 style="margin-top: 5%; font-size: 24px; color: #481b68;" >Или укажите адрес на карте</h2>
 
-                <input class="inpt6 some-input" type="text" placeholder="Ваше имя">
-                <input class="inpt7 some-input" type="text" placeholder="Телефон">
-                <input class="inpt8 some-input" type="text" placeholder="Выберите способ оплаты">
-            
-            </span>
-  
-            <h2 style="margin-top: 10%;">Или укажите адрес на карте</h2>
+        <div>
+            <img style="height: 40vh; margin-top: 20px;" src="src/map_in_order.svg" alt="">
+        </div>
+      </div>
 
-          </div>
+      <div class="order-container-right">
+        <div style="margin: 5%">
+          <span>
+            <h1 class="heading">Товары</h1>
+          </span>
 
-          <div class="order-container-right">
+          <ul>
+            <li class="secondHorContainer text-in-order" style="margin-top: 20px">
+                <h2 class="text-in-order">Букет 1</h2>
+                <h2 style="margin-left: 40px">700 р.</h2>
+            </li>
+            <li class="secondHorContainer text-in-order" style="margin-top: 20px">
+                <h2>Букет 2</h2>
+            <h2 style="margin-left: 40px">1700 р.</h2>
+            </li>
+            <li class="secondHorContainer text-in-order" style="margin-top: 20px">
+                <h2>Букет 3</h2>
+            <h2 style="margin-left: 40px">2100 р.</h2>
+            </li>
+          </ul>
 
-            <div style="margin: 5%;">
-                
-                <span>
-                    <h1 class="heading">Товары</h1>
-                  </span>
+          <span class="secondHorContainer text-in-order" style="margin-top: 50px; color: #481b68; font-weight: 600;">
+            <h2>Итоговая сумма</h2>
+            <h2 style="margin-left: 40px">4500 р.</h2>
+          </span>
 
-                  <span class="secondHorContainer" style="margin-top: 20px;">
-                    <h2>Букет 1</h2>
-                    <h2 style="margin-left: 40px;">700 р.</h2>
-                  </span>
-
-                  <span class="secondHorContainer" style="margin-top: 20px;">
-                    <h2>Букет 2</h2>
-                    <h2 style="margin-left: 40px;">1700 р.</h2>
-                  </span>
-
-                  <span class="secondHorContainer" style="margin-top: 20px;">
-                    <h2>Букет 3</h2>
-                    <h2 style="margin-left: 40px;">2100 р.</h2>
-                  </span>
-
-                  <span class="secondHorContainer" style="margin-top: 20px;">
-                    <h2>Итоговая сумма</h2>
-                    <h2 style="margin-left: 40px;">4500 р.</h2>
-                  </span>
-
-            </div>
-  
-          </div>
+          <button class="btn-purple">
+            <span><a href="index.html" style="color: #ffffff; font-size: 24px;">Оплатить</a></span>
+          </button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
