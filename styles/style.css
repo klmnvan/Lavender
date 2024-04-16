@@ -12,7 +12,7 @@
   font-family: "Open Sans";
   font-weight: 300;
   padding: 1vw 1vw;
-  border-radius: 30px;
+  border-radius: 30vw;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
   font-size: 1.2vw;
@@ -28,15 +28,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
-  border-radius: 30px;
+  border-radius: 2vw;
   border: 2px solid #481b68;
   background-color: transparent;
   color: #481b68;
   font-family: "Open Sans";
-  font-weight: 600;
-  padding: 12px 30px;
-  font-size: 13px;
+  font-weight: 500;
+  padding: 1vw 2vw;
+  font-size: 1vw;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
@@ -158,7 +157,7 @@
 :root {
   --underline-intrinsic-width: 8;
   --underline-width: 12;
-  --underline-cap-width: 4px;
+  --underline-cap-width: 0.2vw;
   --underline-offset-y: -3px;
   --underline-padding-x: 0.2vw;
   --cap-image-left: url(https://files-d4s40otz1.now.sh/left.svg);
@@ -175,7 +174,8 @@
   background-image: linear-gradient(0deg, #C6B9C0, #C6B9C0);
   background-position-y: calc(100% - var(--underline-offset-y) * -2);
   background-size: calc(102% - var(--underline-cap-width) * var(--underline-width-scale) * 2) calc(var(--underline-width) * 1px);
-  font-size: 4vw;
+  font-size: 3vw;
+  font-family: "Playfair Display";
 }
 
 .tittle-seconadry {
@@ -375,6 +375,74 @@
   border-width: 0px;
 }
 
+.ul-3screen{
+  font-family: "Open Sans";
+  color: #6a5975;
+  margin-top: 7%;
+  margin-left: 5%;
+}
 
+.ul-3screen>li{
+  margin: 3% 0%;
+  font-size: 0.9vw;
+}
 
+.ul-3screen>li:nth-child(2){
+  margin: 2% 0%;
+  color: #39363d;
+  font-weight: 600;
+  font-size: 1.3vw;
+  list-style: disc;
+}
+
+.ul-3screen::marker {
+  color: #2e9aff;
+}
+
+.text-tittle-3screen{
+  font-family: "Playfair Display";
+  color: #481b68;
+  font-weight: 450;
+  font-size: 2vw;
+  margin-top: 5%;
+}
+
+.text-desc-3screen{
+  font-family: "Open Sans";
+  color: #481b68;
+  font-weight: 450;
+  font-size: 0.8vw;
+  margin-top: 3%;
+  line-height: 1.5;
+}
+
+.row1-screen3{
+  flex: calc(1/3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1%;
+  background-color: #C6B8C0;
+  height: 50vh;
+}
+
+.row2-screen3{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1%;
+  background-color: #C6B9C0;
+  height: 30vh;
+}
+
+.text-row-screen3{
+  margin: 5% 10%;
+  text-align: center; 
+}
+
+.img-row-screen3{
+  width: 90%;
+  object-fit: cover;
+}
 
