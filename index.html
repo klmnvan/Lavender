@@ -16,23 +16,28 @@
         <ul class="ul-header">
           <!-- <li><span>Все подарки</span></li> -->
           <li>
-            <a href="#scr2" style="color: #ffffff; text-decoration: none"
-              >Почему мы</a>
+            <a href="#scr2" style="text-decoration: none" class="link">
+              Почему мы
+            </a>
           </li>
           <li>
-            <a href="#scr3" style="color: #ffffff; text-decoration: none"
-              >Наши букеты</a
+            <a href="#scr3" style="text-decoration: none" class="link">
+              Наши букеты</a
             >
           </li>
           <li>
-            <a href="#scr4" style="color: #ffffff; text-decoration: none"
-              >Доставка</a
+            <a href="#scr4" style="text-decoration: none" class="link">
+              Доставка</a
             >
           </li>
-          <li>Контакты</li>
           <li>
-            <a href="order.html" style="color: #ffffff; text-decoration: none"
-              >Заказать букет</a
+            <a href="#scr5" style="text-decoration: none" class="link">
+              Контакты</a
+            >
+          </li>
+          <li>
+            <a href="order.html" style="text-decoration: none" class="link">
+              Заказать букет</a
             >
           </li>
         </ul>
@@ -41,7 +46,13 @@
           <span style="margin-right: 20px; font-size: 1.3vw"
             >8-800-548 47 85</span
           >
-          <button class="btn-light-purple-border">Заказать звонок</button>
+          <button class="btn-light-purple-border">
+            <span>
+              <a href="#scr5" style="color: #ffffff; text-decoration: none">
+                Заказать звонок
+              </a>
+            </span>
+          </button>
         </div>
       </header>
 
@@ -383,7 +394,7 @@
                 Букет из сухоцветов "Лаванда"
               </div>
 
-              <img src="src/4букет.png" alt="" class="img-row-screen3" />
+              <img src="src/4букет.png" alt="" class="img-row-screen3" style="width: 100%;"/>
 
               <div
                 class="text-desc-3screen text-row-screen3"
@@ -461,7 +472,7 @@
                 </div>
 
                 <div class="row2-screen3-col2">
-                  <img src="src/5букет.png" alt="" class="img-row-screen3" />
+                  <img src="src/5букет.png" alt="" class="img-row-screen3" style="width: 100%;"/>
                 </div>
               </div>
             </div>
@@ -526,8 +537,8 @@
       </div>
     </div>
 
-    <!-- Экран 5. Наши букеты -->
-    <a name="scr3"></a>
+    <!-- Экран 5. Контакты -->
+    <a name="scr5"></a>
     <div class="content-container" style="background-color: #e1dad3">
 
       <div style="margin: 8% 6%; display: flex; flex-direction: row; ">
@@ -577,17 +588,50 @@
       <!-- Вторая половина -->
       <div style="background-color: #e1dad3; flex: 0.7; display: flex; align-items: center;">
 
-        <div style="background-color: aqua; width: 100%; height: 80%; margin-left: 8%; display: flex;">
+        <div style="background-color: #c6b8c0; width: 100%; height: 80%; margin-left: 8%; display: flex;">
           
           <!-- Первая часть -->
-          <div style="flex: calc(6/10); display: flex;">
+          <div style="flex: calc(6/10); display: flex; margin: 3% 0 3% 3%;">
 
-            <div style="flex: calc(1/2);">
-d
+            <div style="width: 50%;">
+
+              <div class="screen4-email">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="8%" height="8%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5%;">
+                  <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#2C1039" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="3" y="5" width="18" height="14" rx="2" stroke="#2C1039" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                flowershop@yandex.ru
+              </div>
+
+              <div class="screen4-phone">
+                <svg width="8%" height="8%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5%;">
+                  <path d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z" stroke="#2C1039" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                8 800 548 47 85
+              </div>
+
+              <div class="screen4-location">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="12%" height="12%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5%;">
+                  <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="#2C1039" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#2C1039" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Юр.адрес: г. Новосибирск, ул. Ипподромская, д.42
+              </div>
+
+              <div class="row2-screen3-col1-text-desc" style="margin: auto 0 5% 0; margin-top: 25%;">
+                К любому букету в подарок фирменная открытка с вашим текстом, средство по уходу за срезанными цветами и удобная коробка переноска. 
+              </div>
+
+              <div class="row2-screen3-col1-text-desc" style="margin: 10% 0 5% 0;">
+                По вашему желанию можем сделать фото в момент вручения.
+              </div>
+
             </div>
 
-            <div style="flex: calc(1/2); display: flex; float: right; object-fit: contain; background-color: red;">
-              <img src="src/4букет.png" alt="" style="" />
+            <div style="position: relative; width: 50%; float: right; object-fit: contain;">
+              <img src="src/4букет.png" alt="" style="position: absolute; bottom: 0; right: 0; width: 100%; width: 100%;" />
             </div>
 
           </div>
@@ -604,5 +648,78 @@ d
       </div>
 
     </div>
+
+     <!-- Экран 6. Подвал -->
+     <a name="scr6"></a>
+     <div class="content-container" style="display: flex; flex-direction: row; background-color: #39313c; height: 30vh;">
+
+      <div style="margin: 5% 5%; width: 100%;">
+
+        <div style="display: flex;">
+
+          <div style="display: flex; flex-direction: column;">
+            
+            <div class="text-desc-4screen" style="color: #e1dad3;">
+              Мы принимаем к оплате:
+            </div>
+
+            <div style="display: flex; margin-top: 3%;">
+
+              <img src="src/icon-podval1.svg" alt="За стеклом" style="width: 10%; height: 30%; object-fit: contain;">
+
+              <img src="src/icon-podval2.svg" alt="За стеклом" style="width: 30%; height: 30%;">
+
+              <img src="src/icon-podval3.svg" alt="За стеклом" style="width: 30%; height: 30%;">
+
+            </div>
+
+          </div>
+
+          <div style="display: flex; flex-direction: column; ">
+
+            <a href="index.html" style="text-decoration: none; margin-top: 15%; color: #e1dad3; font-size: 1vw;" class="link txt-logo">
+              LAVENDER
+            </a>
+
+            <a href="order.html" class="text-desc-4screen" style="text-decoration: none; margin-top: 10%; color: #e1dad3; text-align: center; font-size: 0.8vw;">
+              Заказать букет
+            </a>
+
+            <a href="#scr4" class="text-desc-4screen" style="text-decoration: none; margin-top: 10%; color: #e1dad3; text-align: center; font-size: 0.8vw;">
+              Доставка
+            </a>
+
+          </div>
+
+          <div style="display: flex; flex-direction: column;">
+            
+            <div class="text-desc-4screen" style="color: #e1dad3;">
+              Следи за нами в соц-сетях:
+            </div>
+
+            <div style="display: flex; margin-top: 10%;">
+
+              <div>
+                <img src="src/icon-podval4.svg" alt="За стеклом" style="width: 90%; height: 90%;">
+              </div>
+
+              <div>
+                <img src="src/icon-podval5.svg" alt="За стеклом" style="width: 90%; height: 90%; margin: 0 40%;">
+              </div>
+
+              <div>
+                <img src="src/icon-podval6.svg" alt="За стеклом" style="width: 90%; height: 90%; margin: 0 70%;">
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+     </div>
+
   </body>
 </html>
