@@ -1,349 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/null.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Lavender</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/null.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-  <title>Lavender</title>
-</head>
+  <body>
+    <div class="content-container">
+      <header class="header-container">
+        <span class="txt-logo">LAVENDER</span>
 
-<body>
-  <div class="content-container">
-    <header class="header-container">
-      <span class="txt-logo">LAVENDER</span>
+        <ul class="ul-header">
+          <!-- <li><span>Все подарки</span></li> -->
+          <li>
+            <a href="#scr2" style="color: #ffffff; text-decoration: none"
+              >Почему мы</a>
+          </li>
+          <li>
+            <a href="#scr3" style="color: #ffffff; text-decoration: none"
+              >Наши букеты</a
+            >
+          </li>
+          <li>
+            <a href="#scr4" style="color: #ffffff; text-decoration: none"
+              >Доставка</a
+            >
+          </li>
+          <li>Контакты</li>
+          <li>
+            <a href="order.html" style="color: #ffffff; text-decoration: none"
+              >Заказать букет</a
+            >
+          </li>
+        </ul>
 
-      <ul class="ul-header">
-        <li><span>Все подарки</span></li>
-        <li>
-          <a href="#scr2" style="color: #ffffff; text-decoration: none;">Почему мы</a>
-        </li>
-        <li>
-          <a href="#scr3" style="color: #ffffff; text-decoration: none;">Наши букеты</a>
-        </li>
-        <li>Доставка</li>
-        <li>Контакты</li>
-        <li>
-          <a href="order.html" style="color: #ffffff; text-decoration: none;">Заказать букет</a>
-        </li>
-      </ul>
+        <div class="phone-conainer">
+          <span style="margin-right: 20px; font-size: 1.3vw"
+            >8-800-548 47 85</span
+          >
+          <button class="btn-light-purple-border">Заказать звонок</button>
+        </div>
+      </header>
 
-      <div class="phone-conainer">
-        <span style="margin-right: 20px; font-size: 1.3vw">8-800-548 47 85</span>
-        <button class="btn-light-purple-border">Заказать звонок</button>
+      <div class="content-main" style="max-height: 100%">
+        <div class="info">
+          <span>
+            <h1 class="heading">Цветы в любую точку Росии к празднику</h1>
+          </span>
+
+          <h2>
+            Цветы - наша любовь, наше вдохновение и наша забота о вас! Мы будем
+            рады радовать вас приятными ценами, гибкими условиями доставки и
+            современными авторскими цветочными композициями
+          </h2>
+
+          <button class="btn-purple">
+            <span
+              ><a
+                href="order.html"
+                style="color: #ffffff; text-decoration: none"
+                >Купить букет</a
+              ></span
+            >
+          </button>
+
+          <h3>Юр. адрес: Г. Новосибирск, ул. Ипподромская, д.42</h3>
+        </div>
+
+        <div class="img-main-middle-div">
+          <img src="src/img-middle-main.png" alt="" class="image-main-middle" />
+        </div>
+
+        <div class="img-main-end-div">
+          <svg
+            class="image-main-end"
+            width="11"
+            height="314"
+            viewBox="0 0 11 314"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.5"
+              y="299.5"
+              width="10"
+              height="14"
+              rx="5"
+              stroke="#2C1039"
+            />
+            <path
+              d="M6 302C6 301.724 5.77614 301.5 5.5 301.5C5.22386 301.5 5 301.724 5 302H6ZM5 302V305H6V302H5Z"
+              fill="#2C1039"
+            />
+            <line
+              x1="5.25"
+              y1="1.09278e-08"
+              x2="5.24999"
+              y2="306"
+              stroke="url(#paint0_linear_49_224)"
+              stroke-width="0.5"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_49_224"
+                x1="4.9993"
+                y1="-154.5"
+                x2="5.0014"
+                y2="306"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#2C1039" />
+                <stop offset="1" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- <img src="src/scroll.svg" alt="" class="image-main-end" /> -->
       </div>
-    </header>
+    </div>
 
-    <div class="content-main" style="max-height: 100%">
-      <div class="info">
+    <!-- Экран 2. Что мы предлагаем -->
+    <a name="scr2"></a>
+    <div
+      class="content-container"
+      style="background-image: url(src/backgr2.svg); max-width: 100wh"
+    >
+      <!-- заголовки -->
+      <div
+        class="content-second"
+        style="justify-content: space-around; margin: 3% 5% 0% 5%"
+      >
         <span>
-          <h1 class="heading">Цветы в любую точку Росии к празднику</h1>
+          <h1 class="tittle-seconadry">Что мы предлагаем?</h1>
         </span>
 
-        <h2>
-          Цветы - наша любовь, наше вдохновение и наша забота о вас! Мы будем
-          рады радовать вас приятными ценами, гибкими условиями доставки и
-          современными авторскими цветочными композициями
-        </h2>
+        <ul style="display: flex; flex-direction: row">
+          <li class="li-row-second" style="margin-left: 40px">
+            <span class="white-text-tittle">Современная доставка</span>
+            <span class="white-text-desc">
+              Скоро праздник? Доставим букет с точностью до минуты в нужный день
+              вашим близким!</span
+            >
+          </li>
 
-        <button class="btn-purple">
-          <span><a href="order.html" style="color: #ffffff; text-decoration: none;">Купить букет</a></span>
-        </button>
+          <li class="li-row-second">
+            <span class="white-text-tittle">Присутствие в каждом городе</span>
+            <span class="white-text-desc">
+              Мы собрали курьеров по всей точкам России от
+              Петропавловска-Камчатского до Мурманска</span
+            >
+          </li>
 
-        <h3>Юр. адрес: Г. Новосибирск, ул. Ипподромская, д.42</h3>
+          <li class="li-row-second">
+            <span class="white-text-tittle">Цветы на любой вкус</span>
+            <span class="white-text-desc">
+              Делаем букеты не только из роз – есть и лаванда, пионы, полевые
+              цветы</span
+            >
+          </li>
+        </ul>
       </div>
 
-      <div class="img-main-middle-div">
-        <img src="src/img-middle-main.png" alt="" class="image-main-middle" />
-      </div>
+      <!-- блоки цветов -->
+      <div class="div-second-content" style="margin: 0 5%; margin-top: 4%">
+        <div
+          class="block1"
+          style="background-color: #6a5975; align-content: space-evenly"
+        >
+          <span
+            class="white-text-tittle"
+            style="font-size: 1wv; line-height: 1.5"
+            >Доставку цветов по Всей России!</span
+          >
 
-      <div class="img-main-end-div">
-        <svg class="image-main-end" width="11" height="314" viewBox="0 0 11 314" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <rect x="0.5" y="299.5" width="10" height="14" rx="5" stroke="#2C1039" />
-          <path d="M6 302C6 301.724 5.77614 301.5 5.5 301.5C5.22386 301.5 5 301.724 5 302H6ZM5 302V305H6V302H5Z"
-            fill="#2C1039" />
-          <line x1="5.25" y1="1.09278e-08" x2="5.24999" y2="306" stroke="url(#paint0_linear_49_224)"
-            stroke-width="0.5" />
-          <defs>
-            <linearGradient id="paint0_linear_49_224" x1="4.9993" y1="-154.5" x2="5.0014" y2="306"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="#2C1039" />
-              <stop offset="1" stop-opacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-
-      <!-- <img src="src/scroll.svg" alt="" class="image-main-end" /> -->
-    </div>
-  </div>
-
-  <!-- Экран 2. Что мы предлагаем -->
-  <a name="scr2"></a>
-  <div class="content-container" style="background-image: url(src/backgr2.svg); max-width: 100wh">
-    <!-- заголовки -->
-    <div class="content-second" style="justify-content: space-around; margin: 3% 5% 0% 5%">
-      <span>
-        <h1 class="tittle-seconadry">Что мы предлагаем?</h1>
-      </span>
-
-      <ul style="display: flex; flex-direction: row">
-        <li class="li-row-second" style="margin-left: 40px">
-          <span class="white-text-tittle">Современная доставка</span>
-          <span class="white-text-desc">
-            Скоро праздник? Доставим букет с точностью до минуты в нужный день
-            вашим близким!</span>
-        </li>
-
-        <li class="li-row-second">
-          <span class="white-text-tittle">Присутствие в каждом городе</span>
-          <span class="white-text-desc">
-            Мы собрали курьеров по всей точкам России от
-            Петропавловска-Камчатского до Мурманска</span>
-        </li>
-
-        <li class="li-row-second">
-          <span class="white-text-tittle">Цветы на любой вкус</span>
-          <span class="white-text-desc">
-            Делаем букеты не только из роз – есть и лаванда, пионы, полевые
-            цветы</span>
-        </li>
-      </ul>
-    </div>
-
-    <!-- блоки цветов -->
-    <div class="div-second-content" style="margin: 0 5%; margin-top: 4%">
-      <div class="block1" style="background-color: #6a5975; align-content: space-evenly">
-        <span class="white-text-tittle" style="font-size: 1wv; line-height: 1.5">Доставку цветов по Всей России!</span>
-
-        <span class="white-text-desc" style="
+          <span
+            class="white-text-desc"
+            style="
               margin-top: 10%;
               text-justify: end;
               line-height: 1.5;
               font-size: 1vw;
-            ">Сегодня не все имеют возможность поздравить своих мам, девушек,
-          сестёр с этим праздником лично - кто-то на работе, кто-то живет в
-          другом городе. Мы собрали курьеров во всех городах России, чтобы вы
-          могли порадовать своих близких!</span>
+            "
+            >Сегодня не все имеют возможность поздравить своих мам, девушек,
+            сестёр с этим праздником лично - кто-то на работе, кто-то живет в
+            другом городе. Мы собрали курьеров во всех городах России, чтобы вы
+            могли порадовать своих близких!</span
+          >
 
-        <span class="white-text-desc" style="
+          <span
+            class="white-text-desc"
+            style="
               margin-top: 10%;
               line-height: 1.5;
               text-justify: end;
               font-size: 1vw;
-            ">14 февраля? 8 марта? Закажите у нас доставку цветов и курьер
-          доставит букет без опозданий.</span>
+            "
+            >14 февраля? 8 марта? Закажите у нас доставку цветов и курьер
+            доставит букет без опозданий.</span
+          >
 
-        <span class="white-text-desc" style="
+          <span
+            class="white-text-desc"
+            style="
               margin-top: auto;
               text-justify: end;
               font-size: 1vw;
               text-decoration: overline;
-            ">Посмотрите, как мы работаем →</span>
-      </div>
+            "
+            >Посмотрите, как мы работаем →</span
+          >
+        </div>
 
-      <div class="block1" style="display: flex; padding: 0%">
-        <img src="src/pink_flower.png" alt="" style="height: 100%; width: 100%; object-fit: cover" />
-      </div>
+        <div class="block1" style="display: flex; padding: 0%">
+          <img
+            src="src/pink_flower.png"
+            alt=""
+            style="height: 100%; width: 100%; object-fit: cover"
+          />
+        </div>
 
-      <div class="block1" style="background-color: #5a4c61; padding: 0%">
-        <span class="white-text-desc" style="font-size: 1.4vw; line-height: 1.5; padding: 5%">Цветы, которые не завянут
-          через неделю</span>
+        <div class="block1" style="background-color: #5a4c61; padding: 0%">
+          <span
+            class="white-text-desc"
+            style="font-size: 1.4vw; line-height: 1.5; padding: 5%"
+            >Цветы, которые не завянут через неделю</span
+          >
 
-        <img src="src/tulpan_flower.png" alt="" style="
+          <img
+            src="src/tulpan_flower.png"
+            alt=""
+            style="
               height: 70%;
               width: 100%;
               object-fit: cover;
               align-self: flex-end;
               margin-top: auto;
-            " />
-      </div>
+            "
+          />
+        </div>
 
-      <div class="block1" style="
+        <div
+          class="block1"
+          style="
             background-color: #c6b8c0;
             align-content: end;
             padding: 0%;
             flex: 1;
-          ">
-        <img src="src/purple_flower.jpg" style="
+          "
+        >
+          <img
+            src="src/purple_flower.jpg"
+            style="
               height: 100%;
               width: 100%;
               object-fit: cover;
               align-self: flex-end;
               margin-top: auto;
-            " alt="" />
+            "
+            alt=""
+          />
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Экран 3. Наши букеты -->
-  <a name="scr3"></a>
-  <div class="content-container" style="
-        display: flex;
-        flex-direction: row;
-        background-color: #E1DAD3;
-      ">
-    <!-- Первая половина -->
-    <div style="flex: 0.35; margin: 5% 6%; ">
+    <!-- Экран 3. Наши букеты -->
+    <a name="scr3"></a>
+    <div
+      class="content-container"
+      style="display: flex; flex-direction: row; background-color: #e1dad3"
+    >
+      <!-- Первая половина -->
+      <div style="flex: 0.35; margin: 5% 6%">
+        <h1 class="heading" style="font-size: 3.5vw">
+          Выберите свой <br />идеальный букет
+        </h1>
 
-      <h1 class="heading" style="font-size: 3.5vw; ">Выберите свой <br>идеальный букет</h1>
+        <ul class="ul-3screen">
+          <li>Авторские букеты</li>
+          <li>Большие букеты</li>
+          <li>Маленькие букеты</li>
+          <li>14 февраля</li>
+          <li>Монобукеты</li>
+          <li>8 марта</li>
+          <li>День рождения</li>
+          <li>Букеты по скидке</li>
+        </ul>
 
-      <ul class="ul-3screen">
+        <div class="text-tittle-3screen" style="margin-top: 10%">
+          Не нашли подходящий?
+        </div>
 
-        <li>Авторские букеты</li>
-        <li>Большие букеты</li>
-        <li>Маленькие букеты</li>
-        <li>14 февраля</li>
-        <li>Монобукеты</li>
-        <li>8 марта</li>
-        <li>День рождения</li>
-        <li>Букеты по скидке</li>
+        <div class="text-desc-3screen">
+          Приложите фотографию своего букета и мы <br />
+          посчитаем стоимость сбора и доставки
+        </div>
 
-      </ul>
-
-      <div class="text-tittle-3screen" style="margin-top: 10%;">Не нашли подходящий?</div>
-
-      <div class="text-desc-3screen">Приложите фотографию своего букета и мы <br> посчитаем стоимость сбора и доставки
+        <button class="btn-purple-border" style="margin-top: 5%">
+          <a href="order.html" style="color: #481b68; text-decoration: none"
+            >Заказать свой букет</a
+          >
+        </button>
       </div>
 
-      <button class="btn-purple-border" style=" margin-top: 5%;">
-        <a href="order.html" style="color: #481b68; text-decoration: none;">Заказать свой букет</a>
-      </button>
+      <!-- Вторая половина -->
+      <div
+        style="
+          background-color: #e1dad3;
+          flex: 0.65;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <!-- Блоки цветов -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 5%;
+          "
+        >
+          <!-- 1 строка -->
+          <div style="display: flex; flex-direction: row; align-items: center">
+            <div class="row1-screen3">
+              <div class="text-desc-3screen text-row-screen3">
+                Дизайнерский букет "Весенняя ночь"
+              </div>
 
+              <img src="src/1букет.png" alt="" class="img-row-screen3" />
+
+              <div
+                class="text-desc-3screen text-row-screen3"
+                style="font-weight: 700; font-size: 1vw; margin: auto 0 5% 0"
+              >
+                2100 ₽
+              </div>
+
+              <div
+                class="btn-purple"
+                style="margin: 0 0 5% 0; width: 8vw; padding: 0.7vw 0.3vw"
+              >
+                <a
+                  href="order.html"
+                  style="color: white; text-decoration: none; font-size: 1vw"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+
+            <div class="row1-screen3">
+              <div class="text-desc-3screen text-row-screen3">
+                30 роз в шляпной коробке с бантом
+              </div>
+
+              <img src="src/2букет.png" alt="" class="img-row-screen3" />
+
+              <div
+                class="text-desc-3screen text-row-screen3"
+                style="font-weight: 700; font-size: 1vw; margin: auto 0 5% 0"
+              >
+                1500 ₽
+              </div>
+
+              <div
+                class="btn-purple"
+                style="margin: 0 0 5% 0; width: 8vw; padding: 0.7vw 0.3vw"
+              >
+                <a
+                  href="order.html"
+                  style="color: white; text-decoration: none; font-size: 1vw"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+
+            <div class="row1-screen3">
+              <div class="text-desc-3screen text-row-screen3">
+                Букет из сухоцветов "Лаванда"
+              </div>
+
+              <img src="src/4букет.png" alt="" class="img-row-screen3" />
+
+              <div
+                class="text-desc-3screen text-row-screen3"
+                style="font-weight: 700; font-size: 1vw; margin: auto 0 5% 0"
+              >
+                700 ₽
+              </div>
+
+              <div
+                class="btn-purple"
+                style="margin: 0 0 5% 0; width: 8vw; padding: 0.7vw 0.3vw"
+              >
+                <a
+                  href="order.html"
+                  style="color: white; text-decoration: none; font-size: 1vw"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 строка -->
+          <div style="display: flex; flex-direction: row; margin: 2% 0">
+            <div class="row2-screen3" style="flex: calc(2.02 / 3)">
+              <div
+                style="display: flex; flex-direction: row; flex: 1; width: 100%"
+              >
+                <div class="row2-screen3-col1">
+                  <div
+                    class="text-desc-3screen text-row-screen3"
+                    style="margin: 0; text-align: left"
+                  >
+                    Дизайнерский букет "Магия нежности"
+                  </div>
+
+                  <div class="row2-screen3-col1-text-desc">
+                    Букет собран из роз 50 см - 15 шт, альстромерии - 7 шт,
+                    буплерума - 3 шт.
+                  </div>
+
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      margin-top: 15%;
+                      align-items: center;
+                    "
+                  >
+                    <div
+                      class="btn-purple"
+                      style="margin: 0 0 5% 0; width: 8vw; padding: 0.7vw 0.3vw"
+                    >
+                      <a
+                        href="order.html"
+                        style="
+                          color: white;
+                          text-decoration: none;
+                          font-size: 1vw;
+                        "
+                        >Заказать</a
+                      >
+                    </div>
+
+                    <div
+                      class="text-desc-3screen text-row-screen3"
+                      style="
+                        font-weight: 700;
+                        font-size: 1vw;
+                        margin: 0 0 5% 5%;
+                      "
+                    >
+                      3700 ₽
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row2-screen3-col2">
+                  <img src="src/5букет.png" alt="" class="img-row-screen3" />
+                </div>
+              </div>
+            </div>
+
+            <div class="row2-screen3" style="flex: calc(0.98 / 3)">
+              <div class="text-desc-3screen text-row-screen3">
+                <b>Акция! </b>Букеты с пионами со скидкой 30%
+              </div>
+
+              <img
+                src="src/6букет.png"
+                alt=""
+                class="img-row-screen3"
+                style="height: 73%; width: 90%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Вторая половина -->
-    <div style="background-color: #E1DAD3; flex: 0.65; display: flex; align-items: center;">
+    <!-- Экран 4. Карта -->
+    <a name="scr4"></a>
+    <div class="content-container" style="display: flex; flex-direction: row; background-color: #39313c">
 
-      <!-- Блоки цветов -->
-      <div style="display: flex; flex-direction: column;  width: 100%; margin: 0 5%;">
+      <div style="margin: 3% 10%">
+        <div style="display: flex">
+          <span style="flex: calc(5 / 10)">
+            <h1 class="tittle-seconadry" style="font-size: 3vw">
+              Карта нашей доставки
+            </h1>
+          </span>
 
-        <!-- 1 строка -->
-        <div style="display: flex; flex-direction: row; align-items: center;">
+          <span class="white-text-desc" style="flex: calc(5 / 10); line-height: 1.5">
+            Где бы вы ни были - букет доставим! Мы сотрудничаем с курьерскими
+            службами по всей России - просто выберите город и узнайте
+            подробности доставки
+          </span>
+          
+        </div>
 
-          <div class="row1-screen3">
+        <div style="display: flex; justify-content: center; align-items: center">
 
-            <div class="text-desc-3screen text-row-screen3">
-              Дизайнерский букет "Весенняя ночь"
-            </div>
+          <img src="src/Карта России.png" alt="" style="height: 80vh; width: auto; margin: 0 auto;" usemap="#primary">
 
-            <img src="src/1букет.png" alt="" class="img-row-screen3">
+          <!-- горизонталь, вертикаль, радиус -->
+          <map name="primary" >
+            <area shape="circle" coords="150, 200, 30" href="https://yandex.ru/maps/geo/pskov/53149462/?ll=28.352472%2C57.814823&source=serp_navig&z=13.6" title="Текст для подсказки 1"/>
+            <area shape="circle" coords="320, 270, 30" href="https://yandex.ru/maps/geo/arkhangelsk/53149343/?ll=40.546054%2C64.562729&source=serp_navig&z=10.22" title="Текст для подсказки 2"/>
+            <area shape="circle" coords="110, 430, 30" href="https://yandex.ru/maps/geo/tambov/53057123/?ll=41.400827%2C52.744147&source=serp_navig&z=11.84" title="Текст для подсказки 3"/>
+            <area shape="circle" coords="460, 410, 30" href="https://yandex.ru/maps/geo/khanty_mansiysk/53166400/?ll=69.173161%2C61.018278&source=serp_navig&z=11.11" title="Текст для подсказки 4"/>
+            <area shape="circle" coords="460, 510, 30" href="https://yandex.ru/maps/geo/omsk/53117982/?ll=73.378924%2C55.122774&source=serp_navig&z=9.74" title="Текст для подсказки 5"/>
+            <area shape="circle" coords="600, 590, 30" href="https://yandex.ru/maps/geo/kemerovo/53117902/?ll=86.086088%2C55.397158&source=serp_navig&z=10.82" title="Текст для подсказки 6"/>
+            <area shape="circle" coords="800, 590, 30" href="https://yandex.ru/maps/geo/ust_kut/53109532/?ll=105.783964%2C56.801740&source=serp_navig&z=11.67" title="Текст для подсказки 7"/>
+            <area shape="circle" coords="750, 390, 30" href="https://yandex.ru/maps/geo/norilsk/53110867/?ll=88.080232%2C69.408366&source=serp_navig&z=10.72" title="Текст для подсказки 8"/>
+            <area shape="circle" coords="1000, 370, 30" href="https://yandex.ru/maps/geo/posyolok_gorodskogo_tipa_sangar/53066787/?ll=127.484409%2C63.933599&source=serp_navig&z=12.92" title="Текст для подсказки 9"/>
+            <area shape="circle" coords="1200, 140, 30" href="https://yandex.ru/maps/geo/anadyr/53064280/?ll=177.476118%2C64.729505&source=serp_navig&z=13.46" title="Текст для подсказки 10"/>
+            <area shape="circle" coords="1010, 570, 30" href="https://yandex.ru/maps/geo/tynda/53064034/?ll=124.747822%2C55.140350&source=serp_navig&z=12.7" title="Текст для подсказки 11"/>
+          </map>
+          
+        </div>
+      </div>
+    </div>
 
-            <div class="text-desc-3screen text-row-screen3"
-              style="font-weight: 700; font-size: 1vw; margin: auto 0 5% 0;">
-              2100 ₽
-            </div>
+    <!-- Экран 5. Наши букеты -->
+    <a name="scr3"></a>
+    <div class="content-container" style="background-color: #e1dad3">
 
-            <div class="btn-purple" style="margin: 0 0 5% 0;  width: 8vw; padding: 0.7vw 0.3vw; ">
-              <a href="order.html" style="color: white; text-decoration: none; font-size: 1vw;">Заказать</a>
-            </div>
+      <div style="margin: 8% 6%; display: flex; flex-direction: row; ">
 
+            <!-- Первая половина -->
+      <div style="flex: 0.3">
+        <h1 class="heading" style="font-size: 3.5vw">
+          Контакты и связь с нами
+        </h1>
+
+        <div class="text-desc-4screen" style="margin-top: 10%;">
+          Колл-центр работает с 9:00 до 20:00.
+        </div>
+
+        <div class="text-desc-4screen">
+          Заказы принимаются каждый день, без выходных.
+        </div>
+
+        <div class="text-desc-4screen" style="margin-top: 10%;">
+          Если у вас остались вопросы, оставьте свои данные для связи и мы вам перезвоним!
+        </div>
+
+        <div style="margin-top: 0%;">
+          <input class="inpt1 some-input" type="text" placeholder="Ваше имя" />
+        </div>
+
+        <div style="margin-top: 3%;">
+          <input class="inpt1 some-input" type="text" placeholder="Телефон" />
+        </div>
+          
+
+        <div style="display: flex; margin-top: 10%;">
+
+          <div class="btn-purple" style="width: 8vw; flex: calc(4/10); margin: 0;">
+            <a href="order.html" style="color: white; text-decoration: none; font-size: 1vw; ">
+              Позвоните мне</a>
           </div>
 
-          <div class="row1-screen3">
-
-            <div class="text-desc-3screen text-row-screen3">
-              30 роз в шляпной коробке с бантом
-            </div>
-
-            <img src="src/2букет.png" alt="" class="img-row-screen3">
-
-
-            <div class="text-desc-3screen text-row-screen3"
-              style="font-weight: 700; font-size: 1vw; margin: auto 0 5% 0;">
-              1500 ₽
-            </div>
-
-            <div class="btn-purple" style="margin: 0 0 5% 0;  width: 8vw; padding: 0.7vw 0.3vw; ">
-              <a href="order.html" style="color: white; text-decoration: none; font-size: 1vw;">Заказать</a>
-            </div>
-
-          </div>
-
-          <div class="row1-screen3">
-
-            <div class="text-desc-3screen text-row-screen3">
-              Букет из сухоцветов "Лаванда"
-            </div>
-
-            <img src="src/4букет.png" alt="" class="img-row-screen3">
-
-            <div class="text-desc-3screen text-row-screen3"
-              style="font-weight: 700; font-size: 1vw; margin: auto 0 5% 0;">
-              700 ₽
-            </div>
-
-            <div class="btn-purple" style=" margin: 0 0 5% 0;  width: 8vw; padding: 0.7vw 0.3vw; ">
-              <a href="order.html" style="color: white; text-decoration: none; font-size: 1vw;">Заказать</a>
-            </div>
-
+          <div class="row2-screen3-col1-text-desc" style="flex: calc(6/10); margin: 0 0 0 5%;">
+            Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности.
           </div>
 
         </div>
 
-        <!-- 2 строка -->
-        <div style="display: flex; flex-direction: row; margin: 2% 0;">
+      </div>
 
-          <div class="row2-screen3" style="flex: calc(2.02/3);">
+      <!-- Вторая половина -->
+      <div style="background-color: #e1dad3; flex: 0.7; display: flex; align-items: center;">
 
-            <div style="display: flex; flex-direction: row; flex: 1; width: 100%;">
+        <div style="background-color: aqua; width: 100%; height: 80%; margin-left: 8%; display: flex;">
+          
+          <!-- Первая часть -->
+          <div style="flex: calc(6/10); display: flex;">
 
-              <div class="row2-screen3-col1">
-
-                <div class="text-desc-3screen text-row-screen3" style="margin: 0; text-align: left;">
-                  Дизайнерский букет "Магия нежности"
-                </div>
-
-                <div class="row2-screen3-col1-text-desc">
-                  Букет собран из роз 50 см - 15 шт, альстромерии - 7 шт, буплерума - 3 шт.
-                </div>
-
-                <div style="display: flex; flex-direction: row; margin-top: 15%;align-items: center;">
-
-                  <div class="btn-purple" style=" margin: 0 0 5% 0;  width: 8vw; padding: 0.7vw 0.3vw; ">
-                    <a href="order.html" style="color: white; text-decoration: none; font-size: 1vw;">Заказать</a>
-                  </div>
-
-                  <div class="text-desc-3screen text-row-screen3"
-                    style="font-weight: 700; font-size: 1vw; margin: 0 0 5% 5%;">
-                    3700 ₽
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="row2-screen3-col2">
-
-                <img src="src/5букет.png" alt="" class="img-row-screen3">
-
-              </div>
-
+            <div style="flex: calc(1/2);">
+d
             </div>
 
-
+            <div style="flex: calc(1/2); display: flex; float: right; object-fit: contain; background-color: red;">
+              <img src="src/4букет.png" alt="" style="" />
+            </div>
 
           </div>
 
-          <div class="row2-screen3" style="flex: calc(0.98/3);">
-
-            <div class="text-desc-3screen text-row-screen3">
-              <b>Акция! </b>Букеты с пионами со скидкой 30%
-            </div>
-
-            <img src="src/6букет.png" alt="" class="img-row-screen3" style="height: 73%; width: 90%;">
-
+          <!-- Вторая часть -->
+          <div style="flex: calc(4/10); background-color: #481b68;">
+            <img src="src/pink_flower.png" alt="" style = "height: 100%; width: 100%;" />
           </div>
 
         </div>
 
       </div>
 
+      </div>
+
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>

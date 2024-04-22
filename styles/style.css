@@ -117,7 +117,7 @@
   color: #39313c;
 }
 
-.ul-header > li:first-child:before {
+/* .ul-header > li:first-child:before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -127,7 +127,7 @@
   flex: 1 0 auto;
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
 
 .phone-conainer {
   flex: 0.3;
@@ -457,14 +457,26 @@
   flex: calc(5/10);
 }
 
-
 .text-row-screen3{
   margin: 5% 10%;
   text-align: center; 
 }
 
 .img-row-screen3{
-  width: 90%;
+  width: 100%;
   object-fit: cover;
 }
 
+.inpt1 {
+  width: 80%;
+  margin-right: 1%;
+}
+
+.text-desc-4screen{
+  font-family: "Open Sans";
+  color: #481b68;
+  font-weight: 450;
+  font-size: 1vw;
+  margin-top: 3%;
+  line-height: 1.5;
+}
