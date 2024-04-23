@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/null.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Оформление заказа</title>
+    <script src="script.js" defer></script>
 
     <style>
       .inpt1 {
@@ -47,6 +48,7 @@
   <body>
     <div class="content-order">
       <div class="order-container-left">
+
         <div style="align-items: end" class="div-back-order">
           <svg
             width="27"
@@ -64,8 +66,7 @@
           </svg>
 
           <h2 style="margin-left: 10px;">
-            <a href="index.html" style="font-size: 1.2vw"
-              >Вернуться на галвную</a
+            <a href="index.html" style="font-size: 1.2vw">Вернуться на главную</a
             >
           </h2>
         </div>
@@ -74,27 +75,24 @@
           <h1 class="heading-order">Ваши данные</h1>
         </span>
 
-        <span style="display: flex; margin-top: 2%">
-          <input class="inpt1 some-input" type="text" placeholder="Ваш город" />
-          <input
-            class="inpt2 some-input"
-            type="text"
-            placeholder="Улица доставки"
-          />
-          <input class="inpt3 some-input" type="text" placeholder="Дом" />
-          <input class="inpt4 some-input" type="text" placeholder="Корпус" />
-          <input class="inpt5 some-input" type="text" placeholder="Квартира" />
-        </span>
+        <form id="myForm">
 
-        <span style="display: flex; margin-top: 3%">
-          <input class="inpt6 some-input" type="text" placeholder="Ваше имя" />
-          <input class="inpt7 some-input" type="text" placeholder="Телефон" />
-          <input
-            class="inpt8 some-input"
-            type="text"
-            placeholder="Способ оплаты"
-          />
-        </span>
+          <span style="display: flex; margin-top: 2%">
+          
+            <input id="city" class="inpt1 some-input" type="text" placeholder="Ваш город" required />
+            <input id="street" class="inpt2 some-input" type="text" placeholder="Улица доставки" required/>
+            <input id="home" type="text" class="inpt3 some-input" placeholder="Дом" required/>
+            <input id="frame" class="inpt4 some-input" type="text" placeholder="Корпус" required/>
+            <input id="apartment" class="inpt5 some-input" type="text" placeholder="Квартира" required/>
+          </span>
+  
+          <span style="display: flex; margin-top: 3%">
+            <input id="name" class="inpt6 some-input" type="text" placeholder="Ваше имя" required/>
+            <input id="phone" type="text" class="inpt7 some-input" placeholder="Телефон" required/>
+            <input id="email" class="inpt8 some-input" type="text" placeholder="Почта" required/>
+          </span>
+
+        </form>
 
         <h2 style="margin-top: 3%; font-size: 1.4vw; color: #481b68;" >Или укажите адрес на карте</h2>
 
@@ -131,8 +129,8 @@
             <h2 style="margin-left: 7%">4500 р.</h2>
           </span>
 
-          <button class="btn-purple">
-            <span><a href="index.html" style="color: #ffffff; font-size: 1.4vw; width: 10vw; text-decoration: none;">Оплатить</a></span>
+          <button class="btn-purple" id="submitButton">
+            <span><a href="" style="color: #ffffff; font-size: 1.4vw; width: 10vw; text-decoration: none;">Оплатить</a></span>
           </button>
         </div>
       </div>
