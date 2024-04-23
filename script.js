@@ -15,7 +15,7 @@ submitButton.addEventListener('click', function() {
     || framelInput.value === '' || homeInput.value === ''  || streetInput.value === '' || cityInput.value === '') {
         alert('Пожалуйста, заполните все поля формы!');
     } else {
-        window.location.href = 'index.html';
         alert('Оплачено!');
+        window.location.href = 'index.html';
     }
 });

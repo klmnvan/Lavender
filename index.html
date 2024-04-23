@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/null.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Lavender</title>
+    <script src="scriptMain.js" defer></script>
   </head>
 
   <body>
@@ -560,21 +561,23 @@
           Если у вас остались вопросы, оставьте свои данные для связи и мы вам перезвоним!
         </div>
 
-        <div style="margin-top: 0%;">
-          <input class="inpt1 some-input" type="text" placeholder="Ваше имя" />
-        </div>
+        <form id="callMe">
 
-        <div style="margin-top: 3%;">
-          <input class="inpt1 some-input" type="text" placeholder="Телефон" />
-        </div>
+          <div style="margin-top: 0%;">
+            <input id="name" class="inpt1 some-input" type="text" placeholder="Ваше имя" />
+          </div>
+  
+          <div style="margin-top: 3%;">
+            <input id="phone" class="inpt1 some-input" type="text" placeholder="Телефон" />
+          </div>
           
+        </form>
 
         <div style="display: flex; margin-top: 10%;">
 
-          <div class="btn-purple" style="width: 8vw; flex: calc(4/10); margin: 0;">
-            <a href="" style="color: white; text-decoration: none; font-size: 1vw; ">
-              Позвоните мне</a>
-          </div>
+          <button id="submitButton" class="btn-purple" style="width: 8vw; flex: calc(4/10); margin: 0;">
+            Позвоните мне
+          </button>
 
           <div class="row2-screen3-col1-text-desc" style="flex: calc(6/10); margin: 0 0 0 5%;">
             Нажимая на кнопку вы соглашаетесь с Политикой конфиденциальности.
